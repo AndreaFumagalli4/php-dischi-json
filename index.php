@@ -15,8 +15,12 @@
 
 <body>
     <div id="app">
-
-        <?php ?>
+        <h1>
+            Dischi
+        </h1>
+        <div v-for="disc in dataFromServer" :key="disc.title">
+            {{ disc.title}}
+        </div>
 
     </div>
 

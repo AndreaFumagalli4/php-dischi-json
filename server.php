@@ -8,4 +8,8 @@ if ($decodedJson != null) {
     $discsList = $decodedJson;
 }
 
-echo $jsonData;
+$discsList = json_encode($discsList);
+
+header('Content-Type: application/json');
+
+echo $discsList;

@@ -3,29 +3,24 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            urlAdress: './server.php'
+            urlAdress: './server.php',
+            dataFromServer: [],
         }
     },
 
     methods: {
         getDiscsInfos() {
-            axios.get(this.urlAdress, {
-                params: {
-                }
+            axios.get(this.urlAdress).then((response) => {
+                console.log(response.data);
+                this.dataFromServer = response.data;
             })
-                .then(function (response) {
-                    console.log(response.data);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                })
-                .then(function () {
-                    // always executed
-                });
-        }
+        },
+
     },
 
     created() {
-        this.getDiscsInfos()
-    }
+        this.getDiscsInfos();
+    },
+
+
 }).mount('#app')
