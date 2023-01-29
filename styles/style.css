@@ -13,3 +13,22 @@ header div.img_logo{
     height: 50px;
     width: 50px;
 }
+
+main div.row{
+    padding: 0 4rem;
+}
+
+main div.disc_card{
+    background-color: #112030;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+div.cover_img{
+    width: 200px;
+}
+
+div.cover_img img{
+    width: 100%;
+}
