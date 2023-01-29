@@ -20,9 +20,10 @@ main div.row{
 
 main div.disc_card{
     background-color: #112030;
-    padding: 1rem;
+    padding: 1rem 1.5rem 0 1.5rem;
     margin: 2rem;
     text-align: center;
+    border-radius: 5px;
 }
 
 div.cover_img{
@@ -31,4 +32,13 @@ div.cover_img{
 
 div.cover_img img{
     width: 100%;
+}
+
+div.disc_card h2{
+    margin-bottom: .5rem;
+}
+
+div.disc_card p.author{
+    font-size: .8rem;
+    margin-bottom: .5rem;
 }

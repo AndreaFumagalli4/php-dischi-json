@@ -31,23 +31,19 @@
                             <div class="cover_img d-inline-block">
                                 <img class="img-fluid" :src="disc.poster" alt="cover image">
                             </div>
-                            <h2>
+                            <h2 class="fw-bold fs-6 mt-3">
                                 {{ disc.title }}
                             </h2>
-                            <h4>
+                            <p class="author">
                                 {{ disc.author }}
-                            </h4>
-                            <p>
+                            </p>
+                            <p class="fw-bold fs-6">
                                 {{ disc.year }}
                             </p>
                         </div>
                     </div>
                 </div>
             </main>
-
-            <!-- <div v-for="disc in dataFromServer" :key="disc.title">
-                {{ disc.title}}
-            </div> -->
         </div>
 
         <script src="./mainJs.js"></script>
